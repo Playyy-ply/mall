@@ -14,6 +14,10 @@ class CategoryMapperTest extends MallApplicationTests {
     void findById() {
         Category category = categoryMapper.findById(100001);
         System.out.println(category.toString());
-
+    }
+    @Test
+    void queryById(){
+        Category category = categoryMapper.queryById(100001);
+        System.out.println(category.toString());
     }
 }
