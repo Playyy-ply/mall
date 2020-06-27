@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CategoryMapperTest extends MallApplicationTests {
-    @Autowired
+    @Autowired(required = false)//不添加false会红线描错
     private CategoryMapper categoryMapper;
     @Test
     void findById() {

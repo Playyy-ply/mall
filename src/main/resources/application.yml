@@ -7,5 +7,8 @@ spring:
 
 mybatis:
   configuration:
+    #驼峰 下划 互转
     map-underscore-to-camel-case: true
+    #控制台日志配置
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath:mapper/*.xml
