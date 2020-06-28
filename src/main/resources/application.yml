@@ -12,3 +12,8 @@ mybatis:
     #控制台日志配置
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath:mapper/*.xml
+
+#server:
+ # servlet:
+  #  session:
+    #  timeout: 60
