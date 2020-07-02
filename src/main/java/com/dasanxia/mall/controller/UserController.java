@@ -19,7 +19,11 @@ import java.util.Objects;
 
 import static com.dasanxia.mall.consts.MallConst.CURRENT_USER;
 import static com.dasanxia.mall.enums.ResponseEnum.*;
-
+/**
+ *@RestController是@ResponseBody和@Controller的组合注解
+ @Controller是用来响应页面的，如果是string类型的方法，则springmvc会跳转到相应的页面（视图）
+ @ResponseBody是用来响应数据的，如果是对象类型的方法，则springmvc会将结果对象转成json格式输出给前端）
+ */
 @RestController
 @Slf4j
 public class UserController {

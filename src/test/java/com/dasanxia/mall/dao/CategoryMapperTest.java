@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CategoryMapperTest extends MallApplicationTests {
     @Autowired(required = false)//不添加false会红线描错
     private CategoryMapper categoryMapper;
-    @Test
+/*    @Test
     void findById() {
         Category category = categoryMapper.findById(100001);
         System.out.println(category.toString());
@@ -19,5 +19,5 @@ class CategoryMapperTest extends MallApplicationTests {
     void queryById(){
         Category category = categoryMapper.queryById(100001);
         System.out.println(category.toString());
-    }
+    }*/
 }
